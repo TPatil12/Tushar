@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        table,th,td{
+            padding: 10px;
+        }
+        table{
+            background-color: cadetblue;
+        }
+        div form{
+            background-color: coral;
+            height: 450px;
+        }
+        header {
+            background-color: cadetblue;
+            color: coral;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: darkgoldenrod;
+            list-style: none;
+            padding: 10px;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            padding: 15px 20PX;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        div img {
+            width: 100%;
+            height: 500px;
+        }
+
+        #main {
+            display: flex;
+        }
+
+        .a img {
+            flex: 10;
+        }
+
+        .b img {
+            flex: 10;
+        }
+
+        .c img {
+            flex: 10;
+        }
+
+        #contact {
+            display: flex;
+        }
+
+        .map {
+            flex: 50%;
+        }
+
+        .video {
+            flex: 50%;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            height: 50px;
+            padding-top: 10px;
+            text-align: center;
+
+        }
+
+        #main img {
+            height: 400px;
+            width: 100%;
+        }
+
+        @media (max-width:800px) {
+
+            #main,
+            #contact {
+                flex-direction: column;
+            }
+
+            li {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <img src="assets/images/s5.jpg" alt="">
+    </div>
+    <div id="main">
+        <div class="a">
+            <img src="assets/images/6im.jpg" alt="">
+        </div>
+        <div class="b">
+            <img src="assets/images/s5.jpg" alt="">
+        </div>
+        <div class="c">
+            <img src="assets/images/4im.jpg" alt="">
+        </div>
+
+    </div>
+
+    <section id="contact">
+        <div class="map">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/kKgCxhEBkao"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/irqbmMNs2Bo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <div id="contact">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15286.692782202888!2d74.23764122521959!3d16.69322931596783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1003e8dd18f77%3A0x8145dfbd008c138d!2sRajarampuri%2C%20Kolhapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1681112234560!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="video">
+            <center>
+                <form>
+                    <table>
+                        <h1 style="text-align: center; color: darkorchid;">Registration Form</h1>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td><label>First Name</label></td>
+                            <td><input type="text" placeholder="First Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Last Name</label></td>
+                            <td><input type="text" placeholder="Last Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Email</label></td>
+                            <td> <input type="email" placeholder="Enter Email "></td>
+                        </tr>
+                        <tr>
+                            <td><label>Gender</label></td>
+                            <td><label><input type="radio" name="gender"> Male</label>
+                                <label><input type="radio" name="gender"> Female</label>
+                                <label><input type="radio" name="gender"> Other</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><textarea rows="5" cols="25">
+
+                </textarea></td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td> <select>
+                                    <option>--Select--</option>
+                                    <option>Pune</option>
+                                    <option>Kolhapur</option>
+                                    <option>Satara</option>
+                                    <option>Mumbai</option>
+
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit">
+                                <input type="reset">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </center>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+
+</body>
+
+</html>
